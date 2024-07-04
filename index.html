@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netric Master</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/imgs/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader__con" class="loader__container">
+        <div id="loader" class="loader">
+            <div class="circle c"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle c"></div>
+        </div>
+    </div>
+
+
+        <!-- phones and tablets -->
+        <div class="smallnotyet">
+            <h3>Sorry this site no availbe <br> for small technologies yet</h3>
+        </div>
+    
+    
+
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <a href="https://www.youtube.com/channel/UC-IpSJv-noUFFpk4RGLZAhw" class="logo">
+            Netric Master
+        </a>
+        <a href="assets/components/website.html"><button class="button1">Go to Website</button></a>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main__landing" id="main">
+        <div class="main__container">
+            <div class="main__content">
+                <div>
+                    <h1 class="main__title"> Hello 👋, I am Nawar</h1>
+                    <h4>Front end developer</h4>
+                </div>
+                <p class="main__desc">
+                    Hello, my name is Nawar Alsafadi and i am an Front end developer.
+                    Discover My webiste & enjoy
+                </p>
+                <a href="../assets/components/website.html"><button class="button1">Go to Website</button></a>
+            </div>
+
+            <div class="main__image" id="main__image">
+                <div class="main__image-img">
+                    <img src="assets/imgs/main__image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        document.querySelectorAll('a').forEach(link => {
+            link.setAttribute('target', '_blank');
+        });
+    </script>
+
+
+    <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        // Initialize VanillaTilt on the .main__image element
+        const mainImage = document.querySelector("#main__image");
+        VanillaTilt.init(mainImage, {
+            reverse: false,
+            max: 18,
+            perspective: 1000,
+            scale: 1,
+            speed: 300,
+            transition: true,
+            axis: null,
+            reset: true,
+            "reset-to-start": true,
+            easing: "cubic-bezier(.03,.98,.52,.99)",
+            glare: false,
+            "max-glare": 1,
+            "glare-prerender": false,
+            gyroscope: true,
+            gyroscopeMinAngleX: -45,
+            gyroscopeMaxAngleX: 45,
+            gyroscopeMinAngleY: -45,
+            gyroscopeMaxAngleY: 45,
+        });
+
+        // Function to manually update the tilt effect
+        function updateTilt(event) {
+            const { innerWidth, innerHeight } = window;
+            const { clientX, clientY } = event;
+            const centerX = innerWidth / 2;
+            const centerY = innerHeight / 2;
+
+            const tiltX = (clientX - centerX) / centerX * 18;
+            const tiltY = (centerY - clientY) / centerY * 18;
+
+            mainImage.vanillaTilt.update({ tiltX, tiltY });
+        }
+
+        // Add custom event listener to the document
+        document.addEventListener("mousemove", updateTilt);
+    </script>
+    <script src="./assets/js/main.js"></script>
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDQMCesF1w06559zQ8QP9vNznwRi6raAEs",
+            authDomain: "netric-master.firebaseapp.com",
+            projectId: "netric-master",
+            storageBucket: "netric-master.appspot.com",
+            messagingSenderId: "289117423947",
+            appId: "1:289117423947:web:7a1b8afa193124616b80ce",
+            measurementId: "G-78DY5PKM1L"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+</body>
+
+</html>
