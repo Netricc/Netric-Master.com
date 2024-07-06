@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
 
 // Search in Website Page
 
-let SearchKeyWord2 = {
+let SearchKeyWord1 = {
   Home: "../../index.html",
 
   About: "../components/about.html",
@@ -34,7 +34,7 @@ inputBox.onkeyup = function() {
   let result = [];
   let input = inputBox.value;
   if (input.length) {
-    result = Object.keys(SearchKeyWord2).filter(keyword => {
+    result = Object.keys(SearchKeyWord1).filter(keyword => {
       return keyword.toLocaleLowerCase().startsWith(input.toLocaleLowerCase());
     });
     display(result);
@@ -47,7 +47,7 @@ function display(result) {
   if (result.length) {
     const content = result
       .map(keyword => {
-        return `<li><a href="${SearchKeyWord2[
+        return `<li><a href="${SearchKeyWord1[
           keyword
         ]}" target="_blank">${keyword}</a></li>`;
       })
@@ -57,3 +57,4 @@ function display(result) {
     resultBox.innerHTML = `<p class="p_nores">Can't found this section</p>`;
   }
 }
+

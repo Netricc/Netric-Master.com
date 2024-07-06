@@ -4,6 +4,7 @@
     --primary_color: #FAFAFA;
     --secondary_color: #0077C0;
     --third_color: #1D242B;
+    --gray_color: #5f5f5f;
 }
 
 * {
@@ -31,6 +32,7 @@ body {
 
 
 h1 {
+    color: var(--third_color);
     font-size: 48px;
     font-weight: 900;
 }
@@ -38,21 +40,25 @@ h1 {
 
 
 h2 {
+    color: var(--third_color);
     font-size: 48px;
     font-weight: 300;
 }
 
 h3 {
+    color: var(--third_color);
     font-size: 36px;
     font-weight: 900;
 }
 
 h4 {
+    color: var(--third_color);
     font-size: 28px;
     font-weight: 900;
 }
 
 h5 {
+    color: var(--third_color);
     font-size: 24px;
     font-weight: 700;
 }
@@ -479,6 +485,13 @@ img {
 
 .section .Portofolio__image {
     background: url(../imgs/project__image.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.section .Youtube_channel__image {
+    background: url(../imgs/favicon.png);
     background-position: center;
     background-size: cover;
 
@@ -1134,6 +1147,393 @@ textarea {
 
 /* =============== CONTACT.HTML END =============== */
 
+
+/* =============== Youtube.HTML START =============== */
+.header__youtube {
+    width: 100%;
+    height: 360px;
+    background: #fafafa;
+    box-shadow: 0 8px 24px 2px #00000058;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    position: relative;
+}
+
+
+
+.header__youtube .icon_dev img {
+    width: 260px;
+    border-radius: 50%;
+}
+
+.header__youtube .details_dev {
+    margin-left: 80px;
+}
+
+.header__youtube .details_dev h1 {
+    font-size: 48px;
+    color: #0091ff;
+}
+
+.header__youtube .details_dev span {
+    font-size: 20px;
+    color: var(--third_color);
+    margin: 0 5px;
+}
+
+.header__youtube p {
+    margin-top: 20px;
+}
+
+.header__youtube button {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    border: none;
+    outline: none;
+    padding: 9px 21px;
+    border-radius: 10px;
+    background-color: var(--third_color);
+    color: var(--primary_color);
+    cursor: pointer;
+}
+
+.main__youtube {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--primary_color);
+    padding: 60px 80px;
+}
+
+.main__youtube_box {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.main__youtube_box article {
+    width: 350px;
+    height: 450px;
+    background-color: #f7f6f6;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 20px;
+}
+
+
+.main__youtube_box article .video__image img {
+    width: 100%;
+}
+
+.main__youtube_box article .video__content {
+    padding: 10px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main__youtube_box article .video__content h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--third_color);
+}
+
+.main__youtube_box article .video__content p {
+    font-size: 16px;
+    color: var(--gray_color);
+    margin-bottom: 20px;
+
+}
+
+
+.main__youtube_box article .video__content button {
+    border: none;
+    outline: none;
+    padding: 9px 21px;
+    border-radius: 10px;
+    /* margin-left: 58%; */
+    cursor: pointer;
+    background-color: var(--secondary_color);
+    color: var(--primary_color);
+}
+
+
+/* =============== Youtube.HTML END =============== */
+
+
+
+/* =============== video---.HTML START =============== */
+.main_video_page {
+    width: 100%;
+    background-color: var(--primary_color);
+    min-height: 100vh;
+    padding: 60px 90px;
+}
+
+
+.main_video_page .main__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+}
+
+.main_video_page .main__container .main__image-video {
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    box-shadow: none;
+    margin-top: 80px;
+}
+
+.main_video_page .main__container .main__image-video img {
+    width: 650px;
+    border-radius: 20px;
+    border: 3px solid #dfdfdf;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.main_video_page .main__container .files_used {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.main_video_page .main__container .files_used .files {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.main_video_page .main__container .files_used .item_file_used {
+    width: fit-content;
+    border: 3px solid #dfdfdf;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 20px;
+
+}
+
+
+.main_video_page .main__container .files_used .item_used_details {
+    padding: 10px 8px;
+}
+
+
+.main_video_page .main__container .files_used .item_used_details a {
+    color: #009EFF;
+}
+
+
+.codes_used {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.codes_used pre {
+    border: 10px solid var(--secondary_color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    border-radius: 10px;
+}
+
+.codes_used pre:last-child {
+    margin-top: 40px;
+}
+
+
+.code_text {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #212836;
+    color: white;
+    padding: 32px 20px;
+    overflow-x: auto;
+}
+
+.codes_used pre:last-child .cssTag {
+    color: #DA616E;
+}
+
+
+.code_text .tag {
+    color: #DA616E;
+}
+
+.code_text .attr-name {
+    color: #EAB780;
+}
+
+.code_text .attr-value {
+    color: #5199A7;
+}
+
+.code_text .content {
+    color: #95A5C6;
+}
+
+.code_text .comment {
+    color: #95A5C6;
+
+}
+
+
+.codes_used header {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.codes_used header h5 {
+    color: #0091ff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* tooltip settings 👇 */
+
+.copy {
+    /* button */
+    --button-bg: #353434;
+    --button-hover-bg: #464646;
+    --button-text-color: #CCCCCC;
+    --button-hover-text-color: #8bb9fe;
+    --button-border-radius: 10px;
+    --button-diameter: 36px;
+    --button-outline-width: 1px;
+    --button-outline-color: rgb(141, 141, 141);
+    /* tooltip */
+    --tooltip-bg: #f4f3f3;
+    --toolptip-border-radius: 4px;
+    --tooltip-font-family: Menlo, Roboto Mono, monospace;
+    /* 👆 this field should not be empty */
+    --tooltip-font-size: 12px;
+    /* 👆 this field should not be empty */
+    --tootip-text-color: rgb(50, 50, 50);
+    --tooltip-padding-x: 7px;
+    --tooltip-padding-y: 7px;
+    --tooltip-offset: 8px;
+    /* --tooltip-transition-duration: 0.3s; */
+    /* 👆 if you need a transition, 
+    just remove the comment,
+    but I didn't like the transition :| */
+}
+
+.copy {
+    box-sizing: border-box;
+    width: var(--button-diameter);
+    height: var(--button-diameter);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.tooltip {
+    position: absolute;
+    opacity: 0;
+    visibility: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font: var(--tooltip-font-size) var(--tooltip-font-family);
+    color: var(--tootip-text-color);
+    background: var(--tooltip-bg);
+    padding: var(--tooltip-padding-y) var(--tooltip-padding-x);
+    border-radius: var(--toolptip-border-radius);
+    pointer-events: none;
+    transition: all var(--tooltip-transition-duration) cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+    content: attr(data-text-initial);
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: calc(var(--tooltip-padding-y) / 2 * -1);
+    width: var(--tooltip-padding-y);
+    height: var(--tooltip-padding-y);
+    background: inherit;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -999;
+    pointer-events: none;
+}
+
+.copy svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkmark {
+    display: none;
+}
+
+/* actions */
+
+.copy:hover .tooltip,
+.copy:focus:not(:focus-visible) .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: calc((100% + var(--tooltip-offset)) * -1);
+}
+
+.copy:focus:not(:focus-visible) .tooltip::before {
+    content: attr(data-text-end);
+}
+
+.copy:focus:not(:focus-visible) .clipboard {
+    display: none;
+}
+
+.copy:focus:not(:focus-visible) .checkmark {
+    display: block;
+}
+
+.copy:hover,
+.copy:focus {
+    background-color: var(--button-hover-bg);
+}
+
+.copy:active {
+    outline: var(--button-outline-width) solid var(--button-outline-color);
+}
+
+.copy:hover svg {
+    color: var(--button-hover-text-color);
+}
+
+
+
+
+
+/* =============== video---.HTML END =============== */
 
 
 
