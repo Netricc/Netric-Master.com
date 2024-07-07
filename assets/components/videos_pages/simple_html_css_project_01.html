@@ -36,7 +36,7 @@
     </header>
 
     <main class="main__youtube_simple_html_css_project_01 main_video_page">
-        <div class="main__container">
+        <difv class="main__container">
             <div class="main__image-video">
                 <img src="../../imgs/img videos/Simple_html_css_project_01.png" alt="">
             </div>
@@ -59,87 +59,68 @@
             </div>
 
             <div class="codes_used">
-
-                <pre class="code_text">
+                <div class="code_div">
                     <header class="codes_used-header">
                         <h5>Html code</h5>
-                        <button class="copy" onclick="copyHtmlCode()">
-                            <span data-text-end="Copied!" data-text-initial="Copy to clipboard" class="tooltip"></span>
-                            <span>
-                              <svg xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 6.35 6.35" y="0" x="0" height="20" width="20" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" class="clipboard">
-                                <g>
-                                  <path fill="currentColor" d="M2.43.265c-.3 0-.548.236-.573.53h-.328a.74.74 0 0 0-.735.734v3.822a.74.74 0 0 0 .735.734H4.82a.74.74 0 0 0 .735-.734V1.529a.74.74 0 0 0-.735-.735h-.328a.58.58 0 0 0-.573-.53zm0 .529h1.49c.032 0 .049.017.049.049v.431c0 .032-.017.049-.049.049H2.43c-.032 0-.05-.017-.05-.049V.843c0-.032.018-.05.05-.05zm-.901.53h.328c.026.292.274.528.573.528h1.49a.58.58 0 0 0 .573-.529h.328a.2.2 0 0 1 .206.206v3.822a.2.2 0 0 1-.206.205H1.53a.2.2 0 0 1-.206-.205V1.529a.2.2 0 0 1 .206-.206z"></path>
-                                </g>
-                              </svg>
-                              <svg xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="18" width="18" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" class="checkmark">
-                                <g>
-                                  <path data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
-                                </g>
-                              </svg>
-                            </span>
-                          </button>
+                        <button class="copy" id="copyHtml" onclick="copyHtmlCode()">
+                            copy code
+                        </button>
                     </header>
-                    <code>
+                    <pre class="code_text">
+        <code>
 <span class="tag">&lt;!DOCTYPE html&gt;</span>
 <span class="tag">&lt;html</span> <span class="attr-name">lang</span>=<span class="attr-value">&quot;en&quot;</span><span class="tag">&gt;</span>
 <span class="tag">&lt;head&gt;</span>
-    <span class="tag">&lt;meta</span> <span class="attr-name">charset</span>=<span class="attr-value">&quot;UTF-8&quot;</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;meta</span> <span class="attr-name">name</span>=<span class="attr-value">&quot;viewport&quot;</span> <span class="attr-name">content</span>=<span class="attr-value">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;title&gt;</span><span class="content">My project</span><span class="tag">&lt;/title&gt;</span>
-    <span class="tag">&lt;link</span> <span class="attr-name">rel</span>=<span class="attr-value">&quot;stylesheet&quot;</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;assets/css/style.css&quot;</span><span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr-name">charset</span>=<span class="attr-value">&quot;UTF-8&quot;</span><span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr-name">name</span>=<span class="attr-value">&quot;viewport&quot;</span> <span class="attr-name">content</span>=<span class="attr-value">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="tag">&gt;</span>
+<span class="tag">&lt;title&gt;</span><span class="content">My project</span><span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr-name">rel</span>=<span class="attr-value">&quot;stylesheet&quot;</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;assets/css/style.css&quot;</span><span class="tag">&gt;</span>
 <span class="tag">&lt;/head&gt;</span>
 <span class="tag">&lt;body&gt;</span>
-    <span class="tag">&lt;header</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;header&quot;</span><span class="tag">&gt;</span>
-        <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;logo&quot;</span><span class="tag">&gt;</span><span class="content">REALLY GREAT SITE</span><span class="tag">&lt;/a&gt;</span>
-        <span class="tag">&lt;nav</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;navigation&quot;</span><span class="tag">&gt;</span>
-            <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">HOME</span><span class="tag">&lt;/a&gt;</span>
-            <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">ABOUT</span><span class="tag">&lt;/a&gt;</span>
-            <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">SHOP</span><span class="tag">&lt;/a&gt;</span>
-            <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">BLOG</span><span class="tag">&lt;/a&gt;</span>
-            <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">CONTACT</span><span class="tag">&lt;/a&gt;</span>
-        <span class="tag">&lt;/nav&gt;</span>
-    <span class="tag">&lt;/header&gt;</span>
-    <span class="tag">&lt;main</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main&quot;</span><span class="tag">&gt;</span>
-        <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__container&quot;</span><span class="tag">&gt;</span>
-            <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__image&quot;</span><span class="tag">&gt;</span>
-                <span class="tag">&lt;img</span> <span class="attr-name">src</span>=<span class="attr-value">&quot;assets/img/HomeImage.png&quot;</span> <span class="attr-name">alt</span>=<span class="attr-value">&quot;Home Image&quot;</span><span class="tag">&gt;</span>
-            <span class="tag">&lt;/div&gt;</span>
-            <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__content&quot;</span><span class="tag">&gt;</span>
-                <span class="tag">&lt;h1</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__title&quot;</span><span class="tag">&gt;</span><span class="content">ORGANIC FASHION</span><span class="tag">&lt;/h1&gt;</span>
-                <span class="tag">&lt;p</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main_description&quot;</span><span class="tag">&gt;</span>
-                     <span class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta laoreet enim, sit amet cursus neque vulputate ac.
-                     Fusce sem ante, mollis vitae mollis eu, cursus at elit.Integer lobortis et diam a sodales.
-                     Quisque semper purus leo, sed convallis turpis mollis quis..</span>
-                <span class="tag">&lt;/p&gt;</span>
-                <span class="tag">&lt;button</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__button&quot;</span><span class="tag">&gt;</span><span class="content">SHOP NOW</span><span class="tag">&lt;/button&gt;</span>
-            <span class="tag">&lt;/div&gt;</span>
-        <span class="tag">&lt;/div&gt;</span>
-    <span class="tag">&lt;/main&gt;</span>
+<span class="tag">&lt;header</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;header&quot;</span><span class="tag">&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;logo&quot;</span><span class="tag">&gt;</span><span class="content">REALLY GREAT SITE</span><span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;nav</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;navigation&quot;</span><span class="tag">&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">HOME</span><span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">ABOUT</span><span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">SHOP</span><span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">BLOG</span><span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">CONTACT</span><span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;/nav&gt;</span>
+<span class="tag">&lt;/header&gt;</span>
+<span class="tag">&lt;main</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main&quot;</span><span class="tag">&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__container&quot;</span><span class="tag">&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__image&quot;</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr-name">src</span>=<span class="attr-value">&quot;assets/img/HomeImage.png&quot;</span> <span class="attr-name">alt</span>=<span class="attr-value">&quot;Home Image&quot;</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__content&quot;</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h1</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__title&quot;</span><span class="tag">&gt;</span><span class="content">ORGANIC FASHION</span><span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main_description&quot;</span><span class="tag">&gt;</span>
+         <span class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta laoreet enim, sit amet cursus neque vulputate ac.
+         Fusce sem ante, mollis vitae mollis eu, cursus at elit.Integer lobortis et diam a sodales.
+         Quisque semper purus leo, sed convallis turpis mollis quis..</span>
+    <span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;button</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__button&quot;</span><span class="tag">&gt;</span><span class="content">SHOP NOW</span><span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/main&gt;</span>
 <span class="tag">&lt;/body&gt;</span>
 <span class="tag">&lt;/html&gt;</span>
-                    </code>
-                </pre>
+        </code>
+                    </pre>
+                </div>
 
-                <pre class="code_text">
+
+                <div class="code_div">
 
                     <header class="codes_used-header">
                         <h5>Css code</h5>
-                        <button class="copy" onclick="copyCssCode()">
-                            <span data-text-end="Copied!" data-text-initial="Copy to clipboard" class="tooltip"></span>
-                            <span>
-                              <svg xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 6.35 6.35" y="0" x="0" height="20" width="20" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" class="clipboard">
-                                <g>
-                                  <path fill="currentColor" d="M2.43.265c-.3 0-.548.236-.573.53h-.328a.74.74 0 0 0-.735.734v3.822a.74.74 0 0 0 .735.734H4.82a.74.74 0 0 0 .735-.734V1.529a.74.74 0 0 0-.735-.735h-.328a.58.58 0 0 0-.573-.53zm0 .529h1.49c.032 0 .049.017.049.049v.431c0 .032-.017.049-.049.049H2.43c-.032 0-.05-.017-.05-.049V.843c0-.032.018-.05.05-.05zm-.901.53h.328c.026.292.274.528.573.528h1.49a.58.58 0 0 0 .573-.529h.328a.2.2 0 0 1 .206.206v3.822a.2.2 0 0 1-.206.205H1.53a.2.2 0 0 1-.206-.205V1.529a.2.2 0 0 1 .206-.206z"></path>
-                                </g>
-                              </svg>
-                              <svg xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="18" width="18" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" class="checkmark">
-                                <g>
-                                  <path data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
-                                </g>
-                              </svg>
-                            </span>
-                          </button>
+                        <button class="copy" id="copyCss" onclick="copyCssCode()">
+                            copy code
+                        </button>
                     </header>
+                    <pre class="code_text">
+
+
                     <code>
 <span class="attr-value">@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');</span><br>
 <span class="attr-value">@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');</span><br>
@@ -246,10 +227,12 @@
 <span class="css">    cursor: pointer;</span><br>
 <span class="css">    border-radius: 20px;</span><br>
 <span class="cssTag">}</span><br>
-                    </code>
-                </pre>
+</code>
+
+</pre>
+                </div>
+
             </div>
-        </div>
     </main>
 
     <script type="text/javascript">
@@ -261,19 +244,30 @@
         });
 
         function copyHtmlCode() {
-            const codeElement = document.querySelector('.code_text:nth-child(1) code');
+            const codeElement = document.getElementById('copyHtml');
             const code = codeElement.innerText;
             navigator.clipboard.writeText(code).then(() => {
+                codeElement.innerHTML = '✅ copied'
+                setTimeout(() => {
+
+                    codeElement.innerHTML = 'copy code'
+                }, "2500");
                 console.log('HTML Code copied to clipboard')
+
             }).catch(err => {
                 console.error('Failed to copy HTML code: ', err);
             });
         }
 
         function copyCssCode() {
-            const codeElement = document.querySelector('.code_text:nth-child(2) code');
+            const codeElement = document.getElementById('copyCss');
             const code = codeElement.innerText;
             navigator.clipboard.writeText(code).then(() => {
+                codeElement.innerHTML = '✅ copied'
+                setTimeout(() => {
+
+                    codeElement.innerHTML = 'copy code'
+                }, "2500");
                 console.log('CSS Code copied to clipboard');
             }).catch(err => {
                 console.error('Failed to copy CSS code: ', err);
@@ -282,7 +276,7 @@
 
     </script>
 
-  
+
 
     <script src="../../js/main.js"></script>
 </body>
