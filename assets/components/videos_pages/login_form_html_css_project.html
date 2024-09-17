@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make the best Login form using Html & Css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../imgs/favicon.png">
+</head>
+
+<body style="background: #FAFAFA;">
+
+    <!-- LOADER -->
+    <div id="loader__con" class="loader__container">
+        <div id="loader" class="loader">
+            <div class="circle c"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle c"></div>
+        </div>
+    </div>
+
+    <!-- Phones and tablets message -->
+    <div class="smallnotyet">
+        <h3>Sorry, this site is not available for small technologies yet</h3>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header__about">
+        <h5><a href="../youtube.html">Youtube Channel</a> / Make the best Login form using Html & Css</h5>
+        <a href="https://youtu.be/FD3MfeZju7U"><button class="button1">See in Youtube</button></a>
+    </header>
+
+    <main class="main__youtube_simple_html_css_project_01 main_video_page">
+        <div class="main__container">
+            <div class="main__image-video">
+                <img src="../../imgs/img videos/login-form-project.png" alt="">
+            </div>
+
+            <div class="files_used">
+                <h3>No File used in the Video</h3>
+                <!-- <div class="files">
+                    <article class="item_file_used item_img">
+                        <div class="item_used_image">
+                            <img src="../../imgs/file Videos used/1 - simple html css project - 01/HomeImage.png"
+                                alt="">
+                        </div>
+                        <div class="item_used_details">
+                            <h5>Home Image</h5>
+                            <a href="../../imgs/file Videos used/1 - simple html css project - 01/HomeImage.png"
+                                download>Download here</a>
+                        </div>
+                    </article>
+                </div> -->
+            </div>
+
+            <div class="codes_used">
+                <div class="code_div">
+                    <header class="codes_used-header">
+                        <h5>Html code</h5>
+                        <button class="copy" id="copyHtml" onclick="copyHtmlCode()">
+                            copy code
+                        </button>
+                    </header>
+                    <pre class="code_text">
+<code id="codeHtml">
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr-name">lang</span>=<span class="attr-value">&quot;en&quot;</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;head&gt;</span>
+        <span class="tag">&lt;title&gt;</span><span class="content">Login Form Tutorial in HTML CSS</span><span class="tag">&lt;/title&gt;</span>
+        <span class="tag">&lt;link</span> <span class="attr-name">rel</span>=<span class="attr-value">&quot;preconnect&quot;</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;https://fonts.gstatic.com&quot;</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;link</span> <span class="attr-name">rel</span>=<span class="attr-value">&quot;stylesheet&quot;</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css&quot;</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;link</span> <span class="attr-name">rel</span>=<span class="attr-value">&quot;stylesheet&quot;</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&amp;display=swap&quot;</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;link</span> <span class="attr-name">rel</span>=<span class="attr-value">&quot;stylesheet&quot;</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;main.css&quot;</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/head&gt;</span>
+    <span class="tag">&lt;body&gt;</span>
+
+    
+        <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;background&quot;</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;shape&quot;</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;shape&quot;</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+
+        <span class="tag">&lt;form&gt;</span>
+
+            <span class="tag">&lt;h3&gt;</span><span class="content">Login Here</span><span class="tag">&lt;/h3&gt;</span>
+            <span class="tag">&lt;label</span> <span class="attr-name">for</span>=<span class="attr-value">&quot;username&quot;</span><span class="tag">&gt;</span><span class="content">Username</span><span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;input</span> <span class="attr-name">type</span>=<span class="attr-value">&quot;text&quot;</span> <span class="attr-name">placeholder</span>=<span class="attr-value">&quot;Email or Phone&quot;</span> <span class="attr-name">id</span>=<span class="attr-value">&quot;username&quot;</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;label</span> <span class="attr-name">for</span>=<span class="attr-value">&quot;password&quot;</span><span class="tag">&gt;</span><span class="content">Password</span><span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;input</span> <span class="attr-name">type</span>=<span class="attr-value">&quot;password&quot;</span> <span class="attr-name">placeholder</span>=<span class="attr-value">&quot;Password&quot;</span> <span class="attr-name">id</span>=<span class="attr-value">&quot;password&quot;</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;button&gt;</span><span class="content">Log In</span><span class="tag">&lt;/button&gt;</span>
+
+            <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;social&quot;</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;go&quot;</span><span class="tag">&gt;</span><span class="content"><i class="fab fa-google"></i> Google</span><span class="tag">&lt;/div&gt;</span>
+                <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;fb&quot;</span><span class="tag">&gt;</span><span class="content"><i class="fab fa-facebook"></i> Facebook</span><span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+
+        <span class="tag">&lt;/form&gt;</span>
+
+
+    <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span>
+</code>
+                    </pre>
+                </div>
+
+
+                <div class="code_div">
+
+                    <header class="codes_used-header">
+                        <h5>Css code</h5>
+                        <button class="copy" id="copyCss" onclick="copyCssCode()">
+                            copy code
+                        </button>
+                    </header>
+                    <pre class="code_text">
+
+
+                   <code id="codeCss">
+<span class="cssTag">*</span><span class="cssTag">,</span><br>
+<span class="cssTag">*</span><span class="pseudo-class">:before</span><span class="cssTag">,</span><br>
+<span class="cssTag">*</span><span class="pseudo-class">:after</span> <span class="cssTag">{</span><br>
+<span class="css">    padding: 0;</span><br>
+<span class="css">    margin: 0;</span><br>
+<span class="css">    box-sizing: border-box;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">body {</span><br>
+<span class="css">    background-color: #080710;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">.background {</span><br>
+<span class="css">    width: 430px;</span><br>
+<span class="css">    height: 520px;</span><br>
+<span class="css">    position: absolute;</span><br>
+<span class="css">    transform: translate(-50%, -50%);</span><br>
+<span class="css">    left: 50%;</span><br>
+<span class="css">    top: 50%;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">.background .shape {</span><br>
+<span class="css">    height: 200px;</span><br>
+<span class="css">    width: 200px;</span><br>
+<span class="css">    position: absolute;</span><br>
+<span class="css">    border-radius: 50%;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">.shape:first-child {</span><br>
+<span class="css">    background: linear-gradient(#1bc52f, #1f680b);</span><br>
+<span class="css">    left: -80px;</span><br>
+<span class="css">    top: -80px;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">.shape:last-child {</span><br>
+<span class="css">    background: linear-gradient(to right, #890e8b, #ba19f0);</span><br>
+<span class="css">    right: -30px;</span><br>
+<span class="css">    bottom: -80px;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">form {</span><br>
+<span class="css">    min-height: 520px;</span><br>
+<span class="css">    width: 400px;</span><br>
+<span class="css">    background-color: rgba(255, 255, 255, 0.13);</span><br>
+<span class="css">    position: absolute;</span><br>
+<span class="css">    transform: translate(-50%, -50%);</span><br>
+<span class="css">    top: 50%;</span><br>
+<span class="css">    left: 50%;</span><br>
+<span class="css">    border-radius: 10px;</span><br>
+<span class="css">    backdrop-filter: blur(10px);</span><br>
+<span class="css">    border: 2px solid rgba(255, 255, 255, 0.1);</span><br>
+<span class="css">    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);</span><br>
+<span class="css">    padding: 50px 35px;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">form *</span> <span class="cssTag">{</span><br>
+<span class="css">    font-family: "Poppins", sans-serif;</span><br>
+<span class="css">    color: #ffffff;</span><br>
+<span class="css">    letter-spacing: 0.5px;</span><br>
+<span class="css">    outline: none;</span><br>
+<span class="css">    border: none;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">form h3 {</span><br>
+<span class="css">    font-size: 32px;</span><br>
+<span class="css">    font-weight: 500;</span><br>
+<span class="css">    line-height: 42px;</span><br>
+<span class="css">    text-align: center;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">label {</span><br>
+<span class="css">    display: block;</span><br>
+<span class="css">    margin-top: 30px;</span><br>
+<span class="css">    font-size: 16px;</span><br>
+<span class="css">    font-weight: 500;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">input {</span><br>
+<span class="css">    display: block;</span><br>
+<span class="css">    height: 50px;</span><br>
+<span class="css">    width: 100%;</span><br>
+<span class="css">    background-color: rgba(255, 255, 255, 0.07);</span><br>
+<span class="css">    border-radius: 3px;</span><br>
+<span class="css">    padding: 0 10px;</span><br>
+<span class="css">    margin-top: 8px;</span><br>
+<span class="css">    font-size: 14px;</span><br>
+<span class="css">    font-weight: 300;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">::placeholder {</span><br>
+<span class="css">    color: #e5e5e5;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">button {</span><br>
+<span class="css">    margin-top: 50px;</span><br>
+<span class="css">    width: 100%;</span><br>
+<span class="css">    background-color: #ffffff;</span><br>
+<span class="css">    color: #080710;</span><br>
+<span class="css">    padding: 15px 0;</span><br>
+<span class="css">    font-size: 18px;</span><br>
+<span class="css">    font-weight: 600;</span><br>
+<span class="css">    border-radius: 5px;</span><br>
+<span class="css">    cursor: pointer;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">.social {</span><br>
+<span class="css">    margin-top: 30px;</span><br>
+<span class="css">    display: flex;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">.social div {</span><br>
+<span class="css">    width: 150px;</span><br>
+<span class="css">    border-radius: 3px;</span><br>
+<span class="css">    padding: 5px 10px 10px 5px;</span><br>
+<span class="css">    background-color: rgba(255, 255, 255, 0.27);</span><br>
+<span class="css">    color: #eaf0fb;</span><br>
+<span class="css">    text-align: center;</span><br>
+<span class="css">    cursor: pointer;</span><br>
+<span class="css">    transition: .3s;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">.social div:hover {</span><br>
+<span class="css">    background-color: rgba(255, 255, 255, 0.47);</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">.social .fb {</span><br>
+<span class="css">    margin-left: 25px;</span><br>
+<span class="cssTag">}</span><br><br>
+
+<span class="cssTag">.social i {</span><br>
+<span class="css">    margin-right: 4px;</span><br>
+<span class="cssTag">}</span><br>
+</code>
+
+</pre>
+                </div>
+
+            </div>
+    </main>
+
+    <script type="text/javascript">
+
+
+        function copyHtmlCode() {
+            const codeElement = document.getElementById('copyHtml');
+            const codesH = document.getElementById('codeHtml');
+
+            const code = codesH.innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                codeElement.innerHTML = '✅ copied'
+                setTimeout(() => {
+
+                    codeElement.innerHTML = 'copy code'
+                }, "2500");
+                console.log('HTML Code copied to clipboard')
+
+            }).catch(err => {
+                console.error('Failed to copy HTML code: ', err);
+            });
+        }
+
+        function copyCssCode() {
+            const codeElement = document.getElementById('copyCss');
+            const codesC = document.getElementById('codeCss');
+
+            const code = codesC.innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                codeElement.innerHTML = '✅ copied'
+                setTimeout(() => {
+
+                    codeElement.innerHTML = 'copy code'
+                }, "2500");
+                console.log('CSS Code copied to clipboard');
+            }).catch(err => {
+                console.error('Failed to copy CSS code: ', err);
+            });
+        }
+
+    </script>
+
+
+
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

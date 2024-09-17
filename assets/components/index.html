@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netric Master</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../imgs/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <!-- LAUDER -->
+    <div id="loader__con" class="loader__container">
+        <div id="loader" class="loader">
+            <div class="circle c"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle c"></div>
+        </div>
+    </div>
+
+
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <a href="../../index.html" class="logo">
+            Netric Master
+        </a>
+
+
+        <a href="https://www.youtube.com/channel/UC-IpSJv-noUFFpk4RGLZAhw">
+            <button class="button2">Subscribe</button>
+        </a>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main__website" id="main">
+        <div class="main__container">
+
+            <div class="search_box">
+                <div class="row">
+                    <input type="text" id="input_box" placeholder="Search Sections" autocomplete="off">
+                    <button class="button2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <div class="result_box" id="result_box">
+
+                </div>
+            </div>
+
+            <div class="main__sections">
+
+
+
+                <div data-aos="fade-up" class="About section">
+                    <div class="section__container">
+                        <div class="About__image section__image">
+
+                        </div>
+
+                        <div class=" section__content">
+                            <h3>ABOUT</h3>
+                            <p>View About me , and my skills to have an general image to my personality</p>
+
+                            <a href="about.html"><button class="button1">Here <i
+                                        class="fa-solid fa-right-long"></i></button></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1500" class="Portofolio section">
+                    
+                    <div class="section__container">
+                        <div class="Portofolio__image section__image">
+
+                        </div>
+
+                        <div class="section__content">
+                            <h3>PORTFOLIO</h3>
+                            <p>View my Projects, I have code projects and design projects , ENTER & enjoy :) </p>
+
+                            <a href="portofolio.html"><button class="button1">Here <i
+                                        class="fa-solid fa-right-long"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Youtube_channel section" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="section__container">
+                        <div class="Youtube_channel__image section__image">
+
+                        </div>
+
+
+                        <div class="section__content">
+                            <h3>NETRIC CHANNEL</h3>
+                            <p>View all my videos with codes and file used in each video. </p>
+
+                            <a href="youtube.html"><button class="button1">Here <i
+                                        class="fa-solid fa-right-long"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Contact section" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="section__container">
+                        <div class="Contact__image section__image">
+
+                        </div>
+
+                        <div class="section__content">
+                            <h3>CONTACT</h3>
+                            <p>Contact Me to work Together, i am very good in my job and i ready to do all</p>
+
+                            <a href="contact.html"><button class="button1">Here <i
+                                        class="fa-solid fa-right-long"></i></button></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/channel/UC-IpSJv-noUFFpk4RGLZAhw"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/netric_master/"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/netricc/"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://discord.gg/23ReGdAq"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+    <script type="text/javascript">
+
+
+
+
+        // Search in Website Page
+
+        let SearchKeyWord2 = {
+            Home: "../../index.html",
+
+            About: "../components/about.html",
+            Skills: "../components/about.html",
+
+            Portfolio: "../components/portofolio.html",
+            Projects: "../components/portofolio.html",
+            "Shope project": "../components/projects/adidas:project/index.html", // ** See it later **
+            "Javascript project": "../components/projects/password generator:project/index.html", // ** See it later **
+            "Html css project": "../components/projects/psFree:project", // ** See it later **
+
+            Contact: "../components/contact.html",
+            "Email me": "../components/contact.html"
+        };
+
+        const resultBox = document.getElementById("result_box");
+        const inputBox = document.getElementById("input_box");
+
+        inputBox.onkeyup = function () {
+            let result = [];
+            let input = inputBox.value;
+            if (input.length) {
+                result = Object.keys(SearchKeyWord2).filter(keyword => {
+                    return keyword.toLocaleLowerCase().startsWith(input.toLocaleLowerCase());
+                });
+                display(result);
+            } else {
+                resultBox.innerHTML = ""; // Clear the result box if input is empty
+            }
+        };
+
+    </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
+<!-- sign -->

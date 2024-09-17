@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Html Css project - 01</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../imgs/favicon.png">
+</head>
+
+<body style="background: #FAFAFA;">
+
+    <!-- LOADER -->
+    <div id="loader__con" class="loader__container">
+        <div id="loader" class="loader">
+            <div class="circle c"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle c"></div>
+        </div>
+    </div>
+
+    <!-- Phones and tablets message -->
+    <div class="smallnotyet">
+        <h3>Sorry, this site is not available for small technologies yet</h3>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header__about">
+        <h5><a href="../youtube.html">Youtube Channel</a> / Simple Html Css project - 01</h5>
+        <a href="https://www.youtube.com/watch?v=hb4sEuwyuZg&t=0s"><button class="button1">See in Youtube</button></a>
+    </header>
+
+    <main class="main__youtube_simple_html_css_project_01 main_video_page">
+        <difv class="main__container">
+            <div class="main__image-video">
+                <img src="../../imgs/img videos/Simple_html_css_project_01.png" alt="">
+            </div>
+
+            <div class="files_used">
+                <h3>File used in the Video</h3>
+                <div class="files">
+                    <article class="item_file_used item_img">
+                        <div class="item_used_image">
+                            <img src="../../imgs/file Videos used/1 - simple html css project - 01/HomeImage.png"
+                                alt="">
+                        </div>
+                        <div class="item_used_details">
+                            <h5>Home Image</h5>
+                            <a href="../../imgs/file Videos used/1 - simple html css project - 01/HomeImage.png"
+                                download>Download here</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="codes_used">
+                <div class="code_div">
+                    <header class="codes_used-header">
+                        <h5>Html code</h5>
+                        <button class="copy" id="copyHtml" onclick="copyHtmlCode()">
+                            copy code
+                        </button>
+                    </header>
+                    <pre class="code_text">
+        <code id="codeHtml">
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr-name">lang</span>=<span class="attr-value">&quot;en&quot;</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;head&gt;</span>
+        <span class="tag">&lt;meta</span> <span class="attr-name">charset</span>=<span class="attr-value">&quot;UTF-8&quot;</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;meta</span> <span class="attr-name">name</span>=<span class="attr-value">&quot;viewport&quot;</span> <span class="attr-name">content</span>=<span class="attr-value">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;title&gt;</span><span class="content">My project</span><span class="tag">&lt;/title&gt;</span>
+        <span class="tag">&lt;link</span> <span class="attr-name">rel</span>=<span class="attr-value">&quot;stylesheet&quot;</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;assets/css/style.css&quot;</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/head&gt;</span>
+    <span class="tag">&lt;body&gt;</span>
+        <span class="tag">&lt;header</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;header&quot;</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;logo&quot;</span><span class="tag">&gt;</span><span class="content">REALLY GREAT SITE</span><span class="tag">&lt;/a&gt;</span>
+            <span class="tag">&lt;nav</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;navigation&quot;</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">HOME</span><span class="tag">&lt;/a&gt;</span>
+                <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">ABOUT</span><span class="tag">&lt;/a&gt;</span>
+                <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">SHOP</span><span class="tag">&lt;/a&gt;</span>
+                <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">BLOG</span><span class="tag">&lt;/a&gt;</span>
+                <span class="tag">&lt;a</span> <span class="attr-name">href</span>=<span class="attr-value">&quot;#&quot;</span><span class="tag">&gt;</span><span class="content">CONTACT</span><span class="tag">&lt;/a&gt;</span>
+            <span class="tag">&lt;/nav&gt;</span>
+        <span class="tag">&lt;/header&gt;</span>
+        <span class="tag">&lt;main</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main&quot;</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__container&quot;</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__image&quot;</span><span class="tag">&gt;</span>
+                    <span class="tag">&lt;img</span> <span class="attr-name">src</span>=<span class="attr-value">&quot;assets/img/HomeImage.png&quot;</span> <span class="attr-name">alt</span>=<span class="attr-value">&quot;Home Image&quot;</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;/div&gt;</span>
+                <span class="tag">&lt;div</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__content&quot;</span><span class="tag">&gt;</span>
+                    <span class="tag">&lt;h1</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__title&quot;</span><span class="tag">&gt;</span><span class="content">ORGANIC FASHION</span><span class="tag">&lt;/h1&gt;</span>
+                    <span class="tag">&lt;p</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main_description&quot;</span><span class="tag">&gt;</span>
+                        <span class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta laoreet enim, sit amet cursus neque vulputate ac.
+                        Fusce sem ante, mollis vitae mollis eu, cursus at elit.Integer lobortis et diam a sodales.
+                        Quisque semper purus leo, sed convallis turpis mollis quis..</span>
+                    <span class="tag">&lt;/p&gt;</span>
+                    <span class="tag">&lt;button</span> <span class="attr-name">class</span>=<span class="attr-value">&quot;main__button&quot;</span><span class="tag">&gt;</span><span class="content">SHOP NOW</span><span class="tag">&lt;/button&gt;</span>
+                <span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;/main&gt;</span>
+    <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span>
+        </code>
+                    </pre>
+                </div>
+
+
+                <div class="code_div">
+
+                    <header class="codes_used-header">
+                        <h5>Css code</h5>
+                        <button class="copy" id="copyCss" onclick="copyCssCode()">
+                            copy code
+                        </button>
+                    </header>
+                    <pre class="code_text">
+
+
+                    <code id="codeCss">
+<span class="attr-value">@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');</span><br>
+<span class="attr-value">@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');</span><br>
+<br>
+<span class="cssTag">:root {</span><br>
+<span class="css">    --primary-color: #1E3706;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">*</span> <span class="cssTag">{</span><br>
+<span class="css">    margin: 0;</span><br>
+<span class="css">    padding: 0;</span><br>
+<span class="css">    box-sizing: border-box;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">body {</span><br>
+<span class="css">    font-family: "Assistant", sans-serif;</span><br>
+<span class="css">    font-weight: 400;</span><br>
+<span class="css">    width: 100%;</span><br>
+<span class="css">    height: 100%;</span><br>
+<span class="css">    overflow-y: hidden;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">li,</span><br>
+<span class="cssTag">a,</span><br>
+<span class="cssTag">button {</span><br>
+<span class="css">    font-family: "Assistant", sans-serif;</span><br>
+<span class="css">    font-weight: 500;</span><br>
+<span class="css">    text-decoration: none;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">h1 {</span><br>
+<span class="css">    font-family: "Tenor Sans", sans-serif;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="comment">/* HEADER */</span><br>
+<br>
+<span class="cssTag">.header {</span><br>
+<span class="css">    width: 100%;</span><br>
+<span class="css">    height: 100px;</span><br>
+<span class="css">    display: flex;</span><br>
+<span class="css">    justify-content: space-between;</span><br>
+<span class="css">    align-items: center;</span><br>
+<span class="css">    padding: 55px 80px;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">.header .logo {</span><br>
+<span class="css">    font-size: 22px;</span><br>
+<span class="css">    font-weight: 600;</span><br>
+<span class="css">    color: var(--primary-color);</span><br>
+<span class="css">    letter-spacing: 1px;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">.navigation a {</span><br>
+<span class="css">    color: var(--primary-color);</span><br>
+<span class="css">    margin: 0 20px;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="comment">/* MAIN */</span><br>
+<br>
+<span class="cssTag">.main {</span><br>
+<span class="css">    width: 100%;</span><br>
+<span class="css">    height: 100%;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">.main__container {</span><br>
+<span class="css">    height: 100%;</span><br>
+<span class="css">    width: 100%;</span><br>
+<span class="css">    display: flex;</span><br>
+<span class="css">    padding: 0 110px;</span><br>
+<span class="css">    justify-content: space-between;</span><br>
+<span class="css">    align-items: center;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">.main__image img {</span><br>
+<span class="css">    width: 400px;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">.main__content {</span><br>
+<span class="css">    display: flex;</span><br>
+<span class="css">    flex-direction: column;</span><br>
+<span class="css">    gap: 60px;</span><br>
+<span class="css">    padding-right: 50px;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">.main__title {</span><br>
+<span class="css">    font-size: 50px;</span><br>
+<span class="css">    font-weight: 700;</span><br>
+<span class="css">    color: var(--primary-color);</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">.main_description {</span><br>
+<span class="css">    color: #000;</span><br>
+<span class="css">    width: 500px;</span><br>
+<span class="css">    font-weight: 600;</span><br>
+<span class="cssTag">}</span><br>
+<br>
+<span class="cssTag">.main__button {</span><br>
+<span class="css">    border: none;</span><br>
+<span class="css">    outline: none;</span><br>
+<span class="css">    padding: 8px 12px;</span><br>
+<span class="css">    background-color: var(--primary-color);</span><br>
+<span class="css">    width: 100px;</span><br>
+<span class="css">    color: #fff;</span><br>
+<span class="css">    cursor: pointer;</span><br>
+<span class="css">    border-radius: 20px;</span><br>
+<span class="cssTag">}</span><br>
+</code>
+
+</pre>
+                </div>
+
+            </div>
+    </main>
+
+    <script type="text/javascript">
+
+
+        function copyHtmlCode() {
+            const codeElement = document.getElementById('copyHtml');
+            const codesH = document.getElementById('codeHtml');
+
+            const code = codesH.innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                codeElement.innerHTML = '✅ copied'
+                setTimeout(() => {
+
+                    codeElement.innerHTML = 'copy code'
+                }, "2500");
+                console.log('HTML Code copied to clipboard')
+
+            }).catch(err => {
+                console.error('Failed to copy HTML code: ', err);
+            });
+        }
+
+        function copyCssCode() {
+            const codeElement = document.getElementById('copyCss');
+            const codesC = document.getElementById('codeCss');
+
+            const code = codesC.innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                codeElement.innerHTML = '✅ copied'
+                setTimeout(() => {
+
+                    codeElement.innerHTML = 'copy code'
+                }, "2500");
+                console.log('CSS Code copied to clipboard');
+            }).catch(err => {
+                console.error('Failed to copy CSS code: ', err);
+            });
+        }
+
+    </script>
+
+
+
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>
