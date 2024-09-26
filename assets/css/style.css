@@ -1894,6 +1894,7 @@ textarea {
 
     h5 {
         color: var(--third_color);
+        
         font-size: 16px;
         font-weight: 700;
     }
